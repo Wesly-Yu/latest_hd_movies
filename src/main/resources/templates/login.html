@@ -251,11 +251,8 @@ a:hover {
 }
 #login_table{
     margin: auto;
-    height: 20px;
+    height: 25px;
 
-}
-#github-link{
-    padding-left: 20px;
 }
 </style>
 </head>
@@ -265,7 +262,7 @@ a:hover {
     <canvas id="universe"></canvas>
       <div class="row">
             <div class="col-md-offset-4 col-md-4 col-sm-7 center-auto pd-sm-50 pd-xs-20 main_content">
-                <form class="form-horizontal" method="post" action="/login/">
+                <form class="form-horizontal">
                     <span class="heading">登陆界面</span>
                     <div class="form-group">
                         <input type="text" name="username" class="form-control"  placeholder="用户名">
@@ -288,7 +285,7 @@ a:hover {
                             <tbody>
                             <tr>
                                 <th>快捷登陆:</th>
-                                <td id="github-link"><a href="https://github.com/login/oauth/authorize?client_id=1c6819d3d068acda9639&redirect_uri=http://localhost:8090/callback&scope=user&state=1"><img src="/static/imgs/github.jpg" class="github"></a></td>
+                                <td id="github-link"><a href="https://github.com/login/oauth/authorize?client_id=1c6819d3d068acda9639&redirect_uri=http://localhost:8090/callback&scope=user&state=1"><img style="height: 20px;width: 20px" src="/static/imgs/github.jpg" class="github"></a></td>
                             </tr>
                             </tbody>
                         </table>
