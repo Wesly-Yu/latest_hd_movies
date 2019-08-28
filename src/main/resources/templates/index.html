@@ -13,64 +13,53 @@
     <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
     function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!-- //for-mobile-apps -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="/static/css/contactstyle.css" type="text/css" media="all" />
     <link rel="stylesheet" href="/static/css/faqstyle.css" type="text/css" media="all" />
     <link href="/static/css/single.css" rel='stylesheet' type='text/css' />
     <link href="/static/css/medile.css" rel='stylesheet' type='text/css' />
-    <!-- banner-slider -->
     <link href="/static/css/jquery.slidey.min.css" rel="stylesheet">
-    <!-- //banner-slider -->
-    <!-- pop-up -->
     <link href="/static/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- //pop-up -->
-    <!-- font-awesome icons -->
     <link rel="stylesheet" href="/static/css/font-awesome.min.css" />
-    <!-- //font-awesome icons -->
-    <!-- js -->
     <script type="text/javascript" src="/static/js/jquery-2.1.4.min.js"></script>
-    <!-- //js -->
-    <!-- banner-bottom-plugin -->
     <link href="/static/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all">
     <script src="/static/js/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#owl-demo").owlCarousel({
-
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
-
-                items : 5,
-                itemsDesktop : [640,4],
-                itemsDesktopSmall : [414,3]
-
-            });
-
-        });
-    </script>
-    <script type="text/javascript" src="/static/js/move-top.js"></script>
-    <script type="text/javascript" src="/static/js/easing.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event){
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-            });
-        });
-    </script>
 <style type="text/css">
-    .navbar-header .navbar-collapse .navbar-right{
-        position: relative;
-        float: right;
+    #myModal{
         margin: auto;
+        padding-top: 200px;
+    }
+    #myModalbody{
+        margin: auto;
+    }
+    .modal-title{
+        position: relative;
+        margin-right: 2px;
+        font-family:"microsoft yahei";
+    }
+    #account{
+        position: relative;
+        margin-left: 85px;
+        font-family:"microsoft yahei";
+    }
+    #passwordzh{
+        position: relative;
+        margin-left: 85px;
+        font-family:"microsoft yahei";
+    }
+    #submitBtn{
+        margin-left: -15px;
+        font-family:"microsoft yahei";
     }
 </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="menu" role="navigation">
           <form class="navbar-form navbar-left">
               <div class="form-group input-group">
                   <input type="text" class="form-control" placeholder="输入视频名称">
@@ -82,7 +71,41 @@
                  <a href="#">注册</a>
               </li>
               <li>
-                  <a href="login.html">登录</a>
+                  <a href="#" class="tbox" id="logindisplay">登录</a>
+                  <div class="modal fade" id="myModal">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              </div>
+                              <div class="modal-body" id="myModalbody">
+                                  <h4 class="modal-title" align="center">登录框</h4>
+                                  <br/>
+                                  <form class="form-horizontal" role="form">
+                                      <div class="form-group">
+                                          <label for="name" class="col-sm-offset-2 col-sm-2 control-label" id="account">账号</label>
+                                          <div class="col-sm-5">
+                                              <input type="text" class="form-control" id="name" placeholder="请输您的入账号">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="password" class="col-sm-offset-2 col-sm-2 control-label" id="passwordzh">密码</label>
+                                          <div class="col-sm-5">
+                                              <input type="password" class="form-control" id="password" placeholder="请输入您的密码">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <div class="col-sm-offset-4 col-sm-5">
+                                              <button id="submitBtn" type="submit" class="btn btn-default btn-block btn-primary">登陆</button>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                              <div class="modal-footer">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </li>
               <li class="dropdown th:if">
                   <a href="#" class="dropdown-toggle" data-target="dropdown" role="button"
@@ -94,8 +117,50 @@
                   </ul>
               </li>
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">快捷登录方式<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">微信登录</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">QQ登录</a></li>
+                  </ul>
+              </li>
+          </ul>
       </div>
     </div>
 </nav>
+<script type="text/javascript">
+    $(function(){
+
+        $(".tbox").click(function(){
+            $('#myModal').modal('show') //显示模态框
+        })
+
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+            items : 5,
+            itemsDesktop : [640,4],
+            itemsDesktopSmall : [414,3]
+
+        });
+
+    });
+</script>
+<script type="text/javascript" src="/static/js/move-top.js"></script>
+<script type="text/javascript" src="/static/js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
 </body>
 </html>
