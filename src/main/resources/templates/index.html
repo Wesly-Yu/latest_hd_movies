@@ -108,13 +108,14 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">我<b class="caret"></b></a>
+                <li class="dropdown" th:if="${session.user !=null}"><a href="#" class="dropdown-toggle" data-toggle="dropdown">${{session.user}}<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">个人信息</a></li>
                         <li class="divider"></li>
                         <li><a href="#">退出登录</a></li>
                     </ul>
                 </li>
+                <li th:if="${session.user ==null}"><a class="tbox">登录</a></li>
             </ul>
         </div>
     </div>
