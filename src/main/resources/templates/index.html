@@ -23,100 +23,100 @@
     <script type="text/javascript" src="../static/js/move-top.js"></script>
     <script type="text/javascript" src="../static/js/easing.js"></script>
 
-<style type="text/css">
-    #myModal{
-        margin: auto;
-        padding-top: 200px;
-    }
-    #myModalbody{
-        margin: auto;
-    }
-    .modal-title{
-        position: relative;
-        margin-right: 2px;
-        font-family:"microsoft yahei";
-    }
-    #account{
-        position: relative;
-        margin-left: 85px;
-        font-family:"microsoft yahei";
-    }
-    #passwordzh{
-        position: relative;
-        margin-left: 85px;
-        font-family:"microsoft yahei";
-    }
-    #submitBtn{
-        margin-left: -15px;
-        font-family:"microsoft yahei";
-    }
-</style>
+    <style type="text/css">
+        #myModal{
+            margin: auto;
+            padding-top: 200px;
+        }
+        #myModalbody{
+            margin: auto;
+        }
+        .modal-title{
+            position: relative;
+            margin-right: 2px;
+            font-family:"microsoft yahei";
+        }
+        #account{
+            position: relative;
+            margin-left: 85px;
+            font-family:"microsoft yahei";
+        }
+        #passwordzh{
+            position: relative;
+            margin-left: 85px;
+            font-family:"microsoft yahei";
+        }
+        #submitBtn{
+            margin-left: -15px;
+            font-family:"microsoft yahei";
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="menu" role="navigation">
-          <ul class="nav navbar-nav navbar-right" id="rigeht-display">
-              <li>
-                 <a href="#">注册</a>
-              </li>
-              <li>
-                  <a href="#" class="tbox" id="logindisplay">登录</a>
-                  <div class="modal fade" id="myModal">
-                      <div class="modal-dialog">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                              </div>
-                              <div class="modal-body" id="myModalbody">
-                                  <h4 class="modal-title" align="center">登录框</h4>
-                                  <br/>
-                                  <form class="form-horizontal" role="form">
-                                      <div class="form-group">
-                                          <label for="name" class="col-sm-offset-2 col-sm-2 control-label" id="account">账号</label>
-                                          <div class="col-sm-5">
-                                              <input type="text" class="form-control" id="name" placeholder="请输您的入账号">
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="password" class="col-sm-offset-2 col-sm-2 control-label" id="passwordzh">密码</label>
-                                          <div class="col-sm-5">
-                                              <input type="password" class="form-control" id="password" placeholder="请输入您的密码">
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <div class="col-sm-offset-4 col-sm-5">
-                                              <button id="submitBtn" type="submit" class="btn btn-default btn-block btn-primary">登陆</button>
-                                          </div>
-                                      </div>
-                                  </form>
-                              </div>
-                              <div class="modal-footer">
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">快捷登录方式<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">微信登录</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">QQ登录</a></li>
-                  </ul>
-              </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">我<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">个人信息</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">退出登录</a></li>
-                  </ul>
-              </li>
-          </ul>
-      </div>
+        <div class="collapse navbar-collapse" id="menu" role="navigation">
+            <ul class="nav navbar-nav navbar-right" id="rigeht-display">
+                <li>
+                    <a href="#">注册</a>
+                </li>
+                <li>
+                    <a href="#" class="tbox" id="logindisplay">登录</a>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body" id="myModalbody">
+                                    <h4 class="modal-title" align="center">登录框</h4>
+                                    <br/>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label for="name" class="col-sm-offset-2 col-sm-2 control-label" id="account">账号</label>
+                                            <div class="col-sm-5">
+                                                <input type="text" class="form-control" id="name" placeholder="请输您的入账号">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password" class="col-sm-offset-2 col-sm-2 control-label" id="passwordzh">密码</label>
+                                            <div class="col-sm-5">
+                                                <input type="password" class="form-control" id="password" placeholder="请输入您的密码">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-4 col-sm-5">
+                                                <button id="submitBtn" type="submit" class="btn btn-default btn-block btn-primary">登陆</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">快捷登录方式<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">微信登录</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">QQ登录</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">我<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">个人信息</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">退出登录</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 <div class="movies_nav">
@@ -269,7 +269,7 @@
                         </a>
                         <div class="mid-1">
                             <div class="w3l-movie-text">
-                                <h6><a href="single.html">Moana</a></h6>
+                                <h6><a href="single.html">热门电影</a></h6>
                             </div>
                             <div class="mid-2">
 
@@ -282,8 +282,6 @@
 
                                         <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
                                         <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
-
-
                                     </ul>
                                 </div>
                                 <div class="clearfix"></div>
@@ -818,86 +816,82 @@
 
                     <div class="clearfix"> </div>
                 </div>
-                </div>
-<!--<form onSubmit="submitFn(this, event);">-->
-    <!--<div class="search-wrapper">-->
-        <!--<div class="input-holder">-->
+            </div>
+            <!--<form onSubmit="submitFn(this, event);">-->
+            <!--<div class="search-wrapper">-->
+            <!--<div class="input-holder">-->
             <!--<input type="text" class="search-input" placeholder="请输入关键词" />-->
             <!--<button class="search-icon"  onClick="searchToggle(this, event);"><span></span></button>-->
-        <!--</div>-->
-        <!--<span class="close" onClick="searchToggle(this, event);"></span>-->
-        <!--<div class="result-container">-->
+            <!--</div>-->
+            <!--<span class="close" onClick="searchToggle(this, event);"></span>-->
+            <!--<div class="result-container">-->
 
-        <!--</div>-->
-    <!--</div>-->
-<!--</form>-->
-<!--<script type="text/javascript">-->
-    <!--function searchToggle(obj, evt){-->
-        <!--var container = $(obj).closest('.search-wrapper');-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</form>-->
+            <!--<script type="text/javascript">-->
+            <!--function searchToggle(obj, evt){-->
+            <!--var container = $(obj).closest('.search-wrapper');-->
 
-        <!--if(!container.hasClass('active')){-->
+            <!--if(!container.hasClass('active')){-->
             <!--container.addClass('active');-->
             <!--evt.preventDefault();-->
-        <!--}-->
-        <!--else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){-->
+            <!--}-->
+            <!--else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){-->
             <!--container.removeClass('active');-->
             <!--// clear input-->
             <!--container.find('.search-input').val('');-->
             <!--// clear and hide result container when we press close-->
             <!--container.find('.result-container').fadeOut(100, function(){$(this).empty();});-->
-        <!--}-->
-    <!--}-->
+            <!--}-->
+            <!--}-->
 
-    <!--function submitFn(obj, evt){-->
-        <!--value = $(obj).find('.search-input').val().trim();-->
+            <!--function submitFn(obj, evt){-->
+            <!--value = $(obj).find('.search-input').val().trim();-->
 
-        <!--_html = "您搜索的关键词： ";-->
-        <!--if(!value.length){-->
+            <!--_html = "您搜索的关键词： ";-->
+            <!--if(!value.length){-->
             <!--_html = "关键词不能为空。";-->
-        <!--}-->
-        <!--else{-->
+            <!--}-->
+            <!--else{-->
             <!--_html += "<b>" + value + "</b>";-->
-        <!--}-->
+            <!--}-->
 
-        <!--$(obj).find('.result-container').html('<span>' + _html + '</span>');-->
-        <!--$(obj).find('.result-container').fadeIn(100);-->
+            <!--$(obj).find('.result-container').html('<span>' + _html + '</span>');-->
+            <!--$(obj).find('.result-container').fadeIn(100);-->
 
-        <!--evt.preventDefault();-->
-    <!--}-->
-<!--</script>-->
-<script type="text/javascript">
-    $(function(){
-
-        $(".tbox").click(function(){
-            $('#myModal').modal('show') //显示模态框
-        })
-
-    });
-</script>
-<script>
-    $(document).ready(function() {
-        $("#owl-demo").owlCarousel({
-
-            autoPlay: 3000, //Set AutoPlay to 3 seconds
-
-            items : 5,
-            itemsDesktop : [640,4],
-            itemsDesktopSmall : [414,3]
-
-        });
-
-    });
-</script>
-<script type="text/javascript" src="/static/js/move-top.js"></script>
-<script type="text/javascript" src="/static/js/easing.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $(".scroll").click(function(event){
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-        });
-    });
-</script>
-
+            <!--evt.preventDefault();-->
+            <!--}-->
+            <!--</script>-->
+            <script type="text/javascript">
+                $(function(){
+                    $(".tbox").click(function(){
+                        $('#myModal').modal('show') //显示模态框
+                    })
+                });
+            </script>
+            <script>
+                $(document).ready(function() {
+                    $("#owl-demo").owlCarousel({
+                        autoPlay: 3000, //Set AutoPlay to 3 seconds
+                        items : 5,
+                        itemsDesktop : [640,4],
+                        itemsDesktopSmall : [414,3]
+                    });
+                });
+            </script>
+            <script type="text/javascript" src="/static/js/move-top.js"></script>
+            <script type="text/javascript" src="/static/js/easing.js"></script>
+            <script type="text/javascript">
+                jQuery(document).ready(function($) {
+                    $(".scroll").click(function(event){
+                        event.preventDefault();
+                        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</div>
 </body>
 </html>
